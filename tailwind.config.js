@@ -81,7 +81,8 @@ module.exports = {
       pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       bounce: 'bounce 1s infinite',
       moveAround: 'moveAround 10s infinite',
-      moveAroundReverse: 'moveAround 10s reverse infinite'
+      moveAroundReverse: 'moveAround 10s reverse infinite',
+      fadeIn: 'fadeIn 2s both'
     },
     backgroundColor: (theme) => theme('colors'),
     backgroundImage: {
@@ -430,6 +431,10 @@ module.exports = {
           animationTimingFunction: 'cubic-bezier(0,0,0.2,1)',
         },
       },
+      fadeIn: {
+        '0%': {opacity: '0'},
+        '100%': {opacity: '1'}
+      }
     },
     letterSpacing: {
       tighter: '-0.05em',
