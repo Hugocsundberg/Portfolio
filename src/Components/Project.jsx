@@ -33,10 +33,13 @@ const Project = (props) => {
     useEffect(()=>{
         screenSizeHandler()
         scrollHandler()
-        setTimeout(() => {
-            screenSizeHandler()
-            scrollHandler()
-        }, 120);
+        let i = 0
+        setInterval(() => {
+            if(i < 30) {
+                i++
+                screenSizeHandler()  
+            }
+        }, 50);
         window.addEventListener('resize', screenSizeHandler)
         window.addEventListener('orientationchange', screenSizeHandler)
         
