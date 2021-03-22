@@ -87,11 +87,11 @@ const Project = (props) => {
                         <p className="pb-8">{props.body}</p>
                         <div className={` mb-2 flex flex-row items-center ${props.link ? "" : "hidden"}`}>
                             <MdWeb size="1.7rem" />
-                            <a target="_blank" rel="noreferrer noopener" className="ml-3 underline" href={props.link}>Visit the site</a>
+                            <a target="_blank" rel="noreferrer noopener" className="ml-3 underline" href={props.link}>{props.siteLinkCopy}</a>
                         </div>
                         <div className={`flex flex-row items-center ${props.github ? "" : "hidden"}`}>
                             <FaGithub size="1.7rem" />
-                            <a target="_blank" rel="noreferrer noopener"  className="underline ml-3" href={props.github}>{props.link ? "Or c" : "C"}heck out the github repository</a>
+                            <a target="_blank" rel="noreferrer noopener"  className="underline ml-3" href={props.github}>{props.gitLinkCopy}</a>
                         </div>
                 </div>
         </div>

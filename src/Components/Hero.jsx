@@ -3,7 +3,7 @@ import anime from 'animejs/lib/anime.es.js';
 import { easings, stagger } from 'animejs';
 import { Link } from 'react-scroll';
 
-const Hero = () => {
+const Hero = (props) => {
     const h1El = useRef()
     const p1El = useRef()
     const p2El = useRef()
@@ -26,8 +26,8 @@ const Hero = () => {
         <div className="pt-36 relative h-screen w-screen bg-white bg-opacity-70 ">
             <p ref={p1El} className="pl-8 md:pl-12 text-3xl mb-8 md:md-12 font-light">Hugo Sundberg</p>
             <h1 ref={h1El} className="pl-8 md:pl-12 text-6xl md:text-7xl font-bold mb-36">Portfolio.</h1>
-            <p className="mb-4 cursor-pointer" ref={p2El}><Link to="projectSection" smooth offset={-50} className="pl-8 md:pl-12 text-3xl font-bold mb-4 md:mb-8">Projects</Link></p>
-            <p ref={p3El}><Link to="aboutMe" smooth offset={-50} className="cursor-pointer pl-8 md:pl-12 text-3xl font-bold">About me</Link></p>
+            <p className="mb-4 cursor-pointer" ref={p2El}><Link to="projectSection" smooth offset={-50} className="pl-8 md:pl-12 text-3xl font-bold mb-4 md:mb-8">{props.bodyProj}</Link></p>
+            <p ref={p3El}><Link to="aboutMe" smooth offset={-50} className="cursor-pointer pl-8 md:pl-12 text-3xl font-bold">{props.bodyAbout}</Link></p>
         </div>
     );
 }
