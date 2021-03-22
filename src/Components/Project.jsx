@@ -35,11 +35,11 @@ const Project = (props) => {
         scrollHandler()
         let i = 0
         setInterval(() => {
-            if(i < 30) {
+            if(i < 100) {
                 i++
                 screenSizeHandler()  
             }
-        }, 50);
+        }, 70);
         window.addEventListener('resize', screenSizeHandler)
         window.addEventListener('orientationchange', screenSizeHandler)
         
