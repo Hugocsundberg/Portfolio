@@ -34,10 +34,13 @@ const Project = (props) => {
         screenSizeHandler()
         scrollHandler()
         let i = 0
-        setInterval(() => {
+        const interval = setInterval(() => {
             if(i < 30) {
                 i++
                 screenSizeHandler()  
+            }
+            else {
+                clearInterval(interval)
             }
         }, 70);
         setTimeout(() => {
@@ -52,7 +55,6 @@ const Project = (props) => {
           }
       
         const intersectionHandler = (entry) => {
-            // console.log(entry)
             if(entry[0].isIntersecting === true) {
                 setShouldScroll(true)
                 setscrollListenerIsSet(true)
