@@ -37,6 +37,7 @@ const Project = (props) => {
         const interval = setInterval(() => {
             if(i < 30) {
                 i++
+                console.log('now!')
                 screenSizeHandler()  
             }
             else {
@@ -44,12 +45,15 @@ const Project = (props) => {
             }
         }, 70);
         setTimeout(() => {
+            console.log('now!')
             screenSizeHandler()
         }, 3600);
         setTimeout(() => {
+            console.log('now!')
             screenSizeHandler()
         }, 5000);
         setTimeout(() => {
+            console.log('now!')
             screenSizeHandler()
         }, 7000);
         window.addEventListener('resize', screenSizeHandler)
