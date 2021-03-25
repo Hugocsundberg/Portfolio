@@ -46,6 +46,12 @@ const Project = (props) => {
         setTimeout(() => {
             screenSizeHandler()
         }, 3600);
+        setTimeout(() => {
+            screenSizeHandler()
+        }, 5000);
+        setTimeout(() => {
+            screenSizeHandler()
+        }, 7000);
         window.addEventListener('resize', screenSizeHandler)
         window.addEventListener('orientationchange', screenSizeHandler)
         
