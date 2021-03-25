@@ -27,7 +27,7 @@ import thisMid from './Components/ProjectImages/this_mid.jpeg'
 function App() {
 
   return (
-    <div className="App bg-gradient-to-b from-blue-100 to-purple-100 font-sans">
+    <div className="w-full h-full overflow-x-hidden App bg-gradient-to-b from-blue-100 to-purple-100 font-sans">
       
       <Router>
         <Switch>
