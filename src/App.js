@@ -32,7 +32,7 @@ function App() {
       <Router>
         <Switch>
           <Route path="/sv">
-          <Hero bodyProj="Projekt" bodyAbout="Om mig" />
+            <Hero bodyProj="Projekt" bodyAbout="Om mig" />
             <div className="bg-gradient-to-b gradient-top">
               <h2 id="projectSection" className=" mb-8 ml-8 md:md-12 md:ml-12 text-5xl md:text-6xl font-bold">Projekt.</h2>
               <Project siteLinkCopy="Kolla in sidan" gitLinkCopy="Eller besök github-repot" link="https://speed-feed.herokuapp.com/" github="https://github.com/Hugocsundberg/Speed-Feed_Social_Network" id="1" imageLong={speedFeedLong} imageMid={speedFeedMid} imageWide={speedFeedWide} name="Speed Feed" left={true} body="Speed Feed är ett socialt nätverk designat och skapat av mig med native PHP, JS och CSS. Projektet är hostat på Heroku med en Postgres databas." />

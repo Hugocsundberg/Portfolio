@@ -33,27 +33,6 @@ const Project = (props) => {
     useEffect(()=>{
         screenSizeHandler()
         scrollHandler()
-        let i = 0
-        const interval = setInterval(() => {
-            if(i < 30) {
-                i++
-                screenSizeHandler()  
-            }
-            else {
-                clearInterval(interval)
-            }
-        }, 70);
-        setTimeout(() => {
-            screenSizeHandler()
-        }, 3600);
-        setTimeout(() => {
-            screenSizeHandler()
-        }, 5000);
-        setTimeout(() => {
-            screenSizeHandler()
-        }, 7000);
-        window.addEventListener('resize', screenSizeHandler)
-        window.addEventListener('orientationchange', screenSizeHandler)
         
         let options = {
             rootMargin: '200px',
@@ -80,6 +59,30 @@ const Project = (props) => {
             setplxOffset(((window.pageYOffset + window.innerHeight) - imageContainer.current.offsetTop) / 6)
         } 
     }
+
+    useEffect(() => {
+        let i = 0
+        const interval = setInterval(() => {
+            if(i < 30) {
+                i++
+                screenSizeHandler()  
+            }
+            else {
+                clearInterval(interval)
+            }
+        }, 70);
+        setTimeout(() => {
+            screenSizeHandler()
+        }, 3600);
+        setTimeout(() => {
+            screenSizeHandler()
+        }, 5000);
+        setTimeout(() => {
+            screenSizeHandler()
+        }, 7000);
+        window.addEventListener('resize', screenSizeHandler)
+        window.addEventListener('orientationchange', screenSizeHandler);
+    }, []);
 
     useEffect(() => {
         if(scrollListenerIsSet) {
