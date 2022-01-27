@@ -46,7 +46,7 @@ function App() {
                 imageLong={marinasateljeLong}
                 imageMid={marinasateljeMid}
                 imageWide={marinasateljeWide}
-                body="Marinas Ateljé är mitt examensarbete som jag byggde till min mormor som målar och säljer tavlor som hobbyverksamhet. Projektet är en blogg och ehandel byggd i NextJS med Typescript, sanity CSM och Klarna som betalningssystem. Sidan har stöd för reservering av tavlor, lazy loading av inlägg och observerar ett RXJS-objekt för att uppdatera tavlor direkt när de blir reserverade av en annan klient. Sidan används skarpt i nuläget utan klarna aktiverat p.g.a. att bolag först behöver skapas. Länken leder till en branch av sidan med Klarna aktiverat i 'Test drive'. "
+                body="Marinas Ateljé är mitt examensarbete som jag byggde till min mormor som målar och säljer tavlor som hobbyverksamhet. Projektet är en blogg och ehandel byggd i NextJS med Typescript, Sanity, och Klarna. Sidan har stöd för reservering av tavlor, lazy loading av inlägg och observerar ett RXJS-objekt för att uppdatera tavlor direkt när de blir reserverade av en annan klient. Sidan används skarpt i nuläget, dock utan klarna aktiverat p.g.a. att vi först behöver registrera bolag. Länken leder till en branch av sidan med Klarna aktiverat i 'Test drive'. "
               />
               <Project
                 siteLinkCopy="Kolla in sidan"
@@ -96,7 +96,7 @@ function App() {
               bodyLinkedin="Min LinkedIn profil"
               cv="https://hugosundbergcv.netlify.app/"
               bodyCv="CV"
-              body="Hej, Jag är 25 år och studerar webbutveckling på Yrgo. Jag har tidigare studerat och arbetat som produktionsledare på ett webbutvecklings-bolag i Göteborg. Efter några år av att befinna mig inom IT- och webbsfären så kan jag inte se mig arbeta inom någon annan bransch. När jag inte programmerar så gillar jag att träna och spela disc-golf. Jag har ett stort intresse för design och UX och anser att bra design och UX är ett måste för att bra funktionalitet ska kunna leverera värde."
+              body={`Tjena, Jag är en 26-årig tekniknörd som studerar till webbutvecklare på Yrgo och tar examen i sommar.${"\n"}Jag har tidigare studerat och arbetat som produktionsledare på ett webbutvecklings-bolag i Göteborg. Efter några år av att befinna mig inom IT- och webbsfären så kan jag inte se mig arbeta inom någon annan bransch.${"\n"}När jag inte programmerar så gillar jag att träna eller spela disc-golf. Jag har ett stort intresse för design och UX och anser att bra design och UX är ett måste för att bra funktionalitet ska kunna leverera värde.${"\n"}${"\n"}Programmering är min hobby och passion.`}
             />
           </Route>
           <Route exact path={"/en" | "/"}>
@@ -118,7 +118,7 @@ function App() {
                 imageLong={marinasateljeLong}
                 imageMid={marinasateljeMid}
                 imageWide={marinasateljeWide}
-                body="Marina's Ateljé is my graduation thesis that I built for my grandmother who paints and sells paintings as a hobby. The project is a blog and e-commerce built in NextJS with Typescript, sanity CSM and Klarna as payment system. The site supports reservation of paintings, lazy loading of posts and observes an RXJS object to update paintings immediately when they are reserved by another client. The page is used live at the moment without Klarna activated due to that a company needs to be created first. The link leads to a branch of the page with Klarna activated in 'Test drive'."
+                body="Marina's Ateljé is my graduation thesis that I built for my grandmother who paints and sells her art as a hobby. The project is a blog and e-commerce built in NextJS with Typescript, Sanity, and Klarna. The site supports reservation of paintings, lazy loading of posts and observes an RXJS object to update paintings immediately when they are reserved by another client. The page is used live at the moment, though without Klarna activated at the moment due to having to register a company first. The link leads to a branch of the page with Klarna activated in 'Test drive'."
               />
               <Project
                 siteLinkCopy="Visit the site"
@@ -168,7 +168,7 @@ function App() {
               bodyLinkedin="My LinkedIn profile"
               cv="https://hugosundbergcv.netlify.app/?lang=en"
               bodyCv="Resume"
-              body="Hi, I'm 25 years old and is currently studying fullstack web development at Yrgo. I have previously studied and worked as production leader at a web development firm in Gothenburg. After a couple years of being in the IT and web sphere i can't see myself working in another field. Beyond programming I enjoy spending time at the gym or playing disc golf. I have a big interest for design and UX and believe that a good design and UX is mandatory for good functionality to deliver value."
+              body={`Hello, I am a 26-year-old technology nerd who's currently studying web development at Yrgo and will graduate this summer.${"\n"}I have previously studied and worked as a production manager at a web development company in Gothenburg. After a few years of being in the IT and web sphere, I can not see myself working in any other industry.${"\n"}When I am not programming, I like to work out or play disc golf. I have a great interest in design and UX and believe that good design and UX is key for good functionality to be able to deliver value${"\n"}${"\n"}Programming is my hobby and passion.`}
             />
           </Route>
         </Switch>
